@@ -29,14 +29,14 @@ Chai Chat is a Real-Time chat application built with Express.js, React.js and we
 		3). Socket.io Port - 8000
 
 #### Note -
-Below are the necessary env variables required for the proper functioning of the application-
+Below are the necessary env variables required for the proper functioning of the application this .env file should be added in the server directory of the project not anywhere else-
 
  
 
  1. MONGODB_URI="mongodb+srv://anshpradhan03:pCk6pvvwLVNuI6NJ@cluster0.ygkcuwn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
  2. PORT=3000
  3. JWT_SECRET=sadfhasdfas
- 4. CLAUDE_API=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
+ 4. CLAUDE_API= cannot be passed due to github secret scanner, instead visit https://console.anthropic.com/dashboard and create the api secret and paste it in the env file in the server directory to see claude AI into action
 
 				
 
