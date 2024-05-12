@@ -57,28 +57,32 @@ I have included the .env file in the repo for testing purposes but by any chance
 		 - Expected Output - array of conversations of which the user has been part of
 
  - **Create Conversation**
-		 - End Point - http://localhost:3000/api/conversation/
-		 - Method - POST
-		 - Expected Input - `senderId` and `receiverId`
-		 - Expected Output - message stating `convo created successfully`
+	
+		 1). End Point - http://localhost:3000/api/conversation/
+		 2). Method - POST
+		 3). Expected Input - `senderId` and `receiverId`
+		 4). Expected Output - message stating `convo created successfully`
 
  - **Send Message**
-		 - End Point - http://localhost:3000/api/message
-		 - Method - POST
-		 - Expected Input - `conversationId, senderId, message` in `req.body`
-		 - Expected Output - message stating `Message sent successfully`
+
+		 1). End Point - http://localhost:3000/api/message
+		 2). Method - POST
+		 3). Expected Input - `conversationId, senderId, message` in `req.body`
+		 4). Expected Output - message stating `Message sent successfully`
 
  - **Get Messages**
-		 - End Point - http://localhost:3000/api/message/(conversationId)
-		 - Method - GET
-		 - Expected Input - conversationId in the params object of `req.params`
-		 - Expected Output - array of messages related to the conversation with the supplied conversationId
+
+		 1). End Point - http://localhost:3000/api/message/(conversationId)
+		 2). Method - GET
+		 3). Expected Input - conversationId in the params object of `req.params`
+		 4). Expected Output - array of messages related to the conversation with the supplied conversationId
 
  - **Get Users**
-		 - End Point - http://localhost:3000/api/users
-		 - Method - GET
-		 - Expected Input - no input required
-		 - Expected Output - array of all the users in the mongoDB Atlas database
+ 
+		 1). End Point - http://localhost:3000/api/users
+		 2). Method - GET
+		 3).  Expected Input - no input required
+		 4).  Expected Output - array of all the users in the mongoDB Atlas database
 		
 #### Testing Information -
 For testing the functionality of the Chai Chat application you can open the application in two instances, once in the normal browser and another instance in an incognito tab and then login in both the instances, after logging in on both instances you can select the user you want to chat with, make sure that user is the same user who you have logged in with in the another instance just like so
