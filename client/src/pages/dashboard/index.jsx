@@ -220,14 +220,9 @@ const Dashboard = () => {
               <input
                 type="text"
                 className="rounded-full p-2 outline-none w-full"
-                placeholder={
-                  currentChat.status === "busy"
-                    ? "Cannot send message as user is busy"
-                    : "message"
-                }
+                placeholder={"message..."}
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                disabled={currentChat.status === "busy"}
               />
               <button
                 onClick={sendMessage}

@@ -61,6 +61,11 @@ io.on("connection", (socket) => {
             message,
             user: { id: user._id, name: user.name, email: user.email },
           });
+      } else {
+        io.to(sender.socketId).emit("getMessage", {
+          message,
+          user: { id: user._id, name: user.name, email: user.email },
+        });
       }
     }
   );

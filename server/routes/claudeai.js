@@ -19,7 +19,7 @@ router.post("/", async (req, res) => {
         content: [
           {
             type: "text",
-            text: `generate a message to a person, don't refer to the person, saying that the user with username ${username} is currently busy and won't be able to recieve any message right now and the reply should only be 25 words max`,
+            text: `generate a message to a person, don't refer to the person, saying that the user with username ${username} is currently busy and won't be able to recieve any message right now, also tell if something is urgent then leave a message and the reply should only be 30 words max`,
           },
         ],
       },
