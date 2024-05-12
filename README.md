@@ -31,30 +31,33 @@ Chai Chat is a Real-Time chat application built with Express.js, React.js and we
 #### Note -
 I have included the .env file in the repo for testing purposes but by any chance if you don't find it below are the necessary environment variables essential for the sites proper functioning -
 
-1).MONGODB_URI="mongodb+srv://anshpradhan03:pCk6pvvwLVNuI6NJ@cluster0.ygkcuwn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-2).PORT=3000
-3).JWT_SECRET=sadfhasdfas
-4).CLAUDE_API=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
+1). MONGODB_URI="mongodb+srv://anshpradhan03:pCk6pvvwLVNuI6NJ@cluster0.ygkcuwn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+2). PORT=3000
+3). JWT_SECRET=sadfhasdfas
+4). CLAUDE_API=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
 
 #### API Routes Description -
 
  - **Create User**
-		 - End Point - http://localhost:3000/api/users/register
-		 - Method - POST
-		 - Expected Input - name, email and password in the `req.body` object
-		 - Expected Output - user object with `name, email, status and _id` of the user
+ 
+		 1). End Point - http://localhost:3000/api/users/register
+		 2). Method - POST
+		 3). Expected Input - name, email and password in the `req.body` object
+		 4). Expected Output - user object with `name, email, status and _id` of the user
 		 
  - **User Login**
-		 - End Point - http://localhost:3000/api/users/login
-		 - Method - POST
-		 - Expected Input - email and password in the `req.body` object
-		 - Expected Output - user object with `id, name, email, status` of user and a `token` value indicating that the user has logged in
+ 
+		 1). End Point - http://localhost:3000/api/users/login
+		 2). Method - POST
+		 3). Expected Input - email and password in the `req.body` object
+		 4). Expected Output - user object with `id, name, email, status` of user and a `token` value indicating that the user has logged in
 
  - **Get Conversation ID and User**
-		 - End Point - http://localhost:3000/api/conversation/(userId)
-		 - Method - GET
-		 - Expected Input - userId in the params object of `req.params`
-		 - Expected Output - array of conversations of which the user has been part of
+ 
+		 1). End Point - http://localhost:3000/api/conversation/(userId)
+		 2). Method - GET
+		 3). Expected Input - userId in the params object of `req.params`
+		 4). Expected Output - array of conversations of which the user has been part of
 
  - **Create Conversation**
 	
