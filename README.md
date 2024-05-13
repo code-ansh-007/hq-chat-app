@@ -2,7 +2,7 @@
 Chai Chat is a Real-Time chat application built with Express.js, React.js and websocket provider Socket.io
 
 ![pic of chaichat](demo2.jpg) 
-<img src="demo3.jpg" alt="pic of chaichat" style="width:300px;height:200px;">
+<img src="demo3.jpg" alt="pic of chaichat" style="width:300px;">
 
 
 #### Tech Used -
